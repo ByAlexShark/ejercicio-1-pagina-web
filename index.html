@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Example</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            background-color: #808080;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            height: 100vh;
+        }
+
+        .flex-item {
+            font-size: 2rem;
+            color: white;
+        }
+
+        .box-red {
+            background-color: red;
+            flex-basis: 50%;
+            flex-grow: 1;
+            flex-shrink: 1;
+            height: 100%;
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            flex-basis: 50%;
+            flex-grow: 1;
+            flex-shrink: 1;
+            height: 100%;
+        }
+
+        .box-blue {
+            background-color: blue;
+            flex-basis: 50%;
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
+
+        .box-green {
+            background-color: green;
+            flex-basis: 50%;
+            flex-grow: 1;
+            flex-shrink: 1; 
+        }
+
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item box-red">Rojo</div>
+        <div class="column">
+            <div class="flex-item box-blue">Azul</div>
+            <div class="flex-item box-green">Verde</div>
+        </div>
+    </div>
+</body>
+</html>
